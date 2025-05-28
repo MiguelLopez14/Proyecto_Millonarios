@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Configuración básica de codificación y vista responsiva -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título de la pestaña del navegador -->
+    <title>EMBAJADORES F.C.</title>
+
+    <!-- Enlace a la hoja de estilos personalizada -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Enlace a los iconos de Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Icono del sitio (favicon) -->
+    <link rel="icon" href="../img/Millos.png" type="image/png">
+</head>
+<body>
+
+    <!-- Encabezado del sitio: logo, buscador, menú de navegación -->
+    <header class="header">
+        <div class="header-content">
+
+            <!-- Logo de la tienda -->
+            <div class="logo">
+                <img class="logo-millos" src="../img/Millos.png" alt="">
+                <h1>EMBAJADOR</h1>
+            </div>
+            
+            <!-- Barra de búsqueda -->
+            <div class="buscador">
+                <input type="text" placeholder="Buscar en indumentaria EMBAJADORA..." />
+                <button class="buscador-btn"><i class='bx bx-search'></i></button>
+            </div>
+            
+            <!-- Menú de navegación principal -->
+            <nav class="nav-menu">
+                <a href="../../index.html">Inicio</a>
+                <a href="historia.html">Historia</a>
+                <a href="productos.html">Productos</a>
+                <a href="contactanos.html">Contactanos</a>
+                <div class="user-icon">
+                    <a href="login.html"><i class='bx bx-user'></i></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido principal de la página -->
+    <main class="contenido-main">
+
+        <!-- Título de la sección -->
+        <div class="titulo">
+            <h3>PRODUCTOS</h3>
+        </div>
+        <hr class="linea-titulo">
+
+        <!-- Sección de productos y filtros -->
+        <section class="productos-section">
+
+            <!-- Barra lateral de filtros -->
+            <div class="cuadro-filtros">
+                <h3>Filtros</h3>
+                <hr class="linea-titulo">
+                <form class="filtros-form">
+
+                    <!-- Filtro por categoría -->
+                    <label for="categoria">Categoría:</label>
+                    <select id="categoria">
+                        <option value="camisetas">Camisetas</option>
+                        <option value="pantalones">Pantalones</option>
+                        <option value="accesorios">Accesorios</option>
+                    </select>
+
+                    <!-- Filtro por color -->
+                    <label for="categoria">Color:</label>
+                    <select id="categoria">
+                        <option value="azul">Azul</option>
+                        <option value="blanco">Blanco</option>
+                        <option value="negro">Negro</option>
+                    </select>
+
+                    <!-- Filtro por talla -->
+                    <label for="categoria">Talla:</label>
+                    <select id="categoria">
+                        <option value="m">M</option>
+                        <option value="xl">XL</option>
+                        <option value="l">L</option>
+                    </select>
+
+                    <!-- Filtro por estilo -->
+                    <label for="categoria">Estilo:</label>
+                    <select id="categoria">
+                        <option value="polo">Polo</option>
+                        <option value="manga_corta">Manga corta</option>
+                        <option value="manga_larga">Manga Larga</option>
+                    </select>
+
+                    <!-- Filtro por rango de precio -->
+                    <label for="precio">Rango de Precio:</label>
+                    <input type="range" id="precio" min="0" max="500000" step="10000">
+
+                    <!-- Botón para aplicar los filtros -->
+                    <button type="submit">
+                        <i class='bx bx-menu-filter'></i> Aplicar Filtros
+                    </button>
+                </form>
+            </div>
+
+            <!-- Contenedor de los productos -->
+            <div class="contenedor-productos">
+
+                <!-- Producto 1 -->
+                <div class="producto">
+                    <img src="../img/producto_1.webp" alt="Camiseta Millonarios 2025">
+                    <hr class="linea-titulo">
+                    <h4>Camiseta Millonarios 2025</h4>
+                    <p>Precio: $200,000</p>
+                    <button><i class='bx bx-cart'></i> Añadir al Carrito</button>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="producto">
+                    <img src="../img/producto_2.webp" alt="Chaqueta Millonarios 2025">
+                    <hr class="linea-titulo">
+                    <h4>Chaqueta Millonarios 2025</h4>
+                    <p>Precio: $150,000</p>
+                    <button><i class='bx bx-cart'></i> Añadir al Carrito</button>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="producto">
+                    <img src="../img/producto_3.webp" alt="Bufanda Millonarios 2025">
+                    <hr class="linea-titulo">
+                    <h4>Bufanda Vieja Guardia Millonarios 2025</h4>
+                    <p>Precio: $50,000</p>
+                    <button><i class='bx bx-cart'></i> Añadir al Carrito</button>
+                </div>
+
+                <!-- Aquí puedes seguir agregando más productos -->
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 MILLONARIOS. Todos los derechos reservados.</p>
+        <address>
+            Contacto: ventas@embajadoresstore.com<br>
+            Bogotá, Colombia.
+        </address>
+    </footer>
+
+</body>
+</html>
